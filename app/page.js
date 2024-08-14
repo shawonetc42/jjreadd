@@ -8,6 +8,7 @@ import timeSince from "@/app/components/helper/timeSince";
 import NavigationMenu from "./components/model/navigationMenu";
 import RightSide from "./components/model/rightSide";
 import PostList from "./pagi/page";
+import StatusUpdate from "./components/client/router/StatusUpdate";
 
 export default async function Home() {
   return (
@@ -20,7 +21,7 @@ export default async function Home() {
           {/* middle */}
           <div className="px-2 ml-0 md:ml-2 md:px-0 ">
             {/* <StatusClick /> */}
-            {/* <StatusUpdate /> */}
+            <StatusUpdate />
             <PostList />
             {/* <React.Suspense fallback={<Loading />}> */}
 
